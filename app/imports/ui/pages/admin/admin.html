@@ -1,0 +1,47 @@
+<template name="Admin_Page">
+
+  {{#if Template.subscriptionsReady}}
+
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Admin Powers
+    </div>
+    <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
+
+      <div class="fields">
+        {{> Text_Form_Control label="First" placeholder="Philip" value=profile.firstName errorMessage=(fieldError "firstName")}}
+        {{> Text_Form_Control label="Last" placeholder="Johnson" value=profile.lastName errorMessage=(fieldError "lastName")}}
+      </div>
+
+      <div class="ui form">
+        <div class="inline fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="frequency" checked="checked">
+              <label>Ban</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="frequency">
+              <label>Upgrade</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="ui primary button" type="submit">Submit</button>
+
+      <div class="field">
+        <br>
+        {{> Text_Form_Control label="New Category" placeholder="New Stuff" value=profile.title errorMessage=(fieldError "title")}}
+      </div>
+
+
+      <button class="ui primary button" type="submit">Submit</button>
+    </form>
+  </div>
+
+  {{/if}}
+
+</template>

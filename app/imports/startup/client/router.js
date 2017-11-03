@@ -68,6 +68,24 @@ userRoutes.route('/filter', {
   },
 });
 
+/*                        ADMIN ROUTES                       */
+export const adminPageRouteName = 'Admin_Page';
+userRoutes.route('/admin', {
+  name: adminPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: adminPageRouteName });
+  },
+});
+
+/*                        ClUB ADMIN ROUTES                       */
+export const clubadminPageRouteName = 'Club_Admin_Page';
+userRoutes.route('/club_admin', {
+  name: clubadminPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: clubadminPageRouteName });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {
