@@ -3,25 +3,25 @@ mock up page for bowfolios
 
 Landing Page
 <div>
-  <img class="ui medium right floated rounded image" src="../images/homepage.png">
+  <img class="ui medium right floated rounded image" src="../screenshots/homepage.png">
 </div>
 
 Home Page / user page 
 <div>
-  <img class="ui medium right floated rounded image" src="../images/profile.png">
+  <img class="ui medium right floated rounded image" src="../screenshots/profile.png">
 </div>
 
 Club page
 <div>
-  <img class="ui medium right floated rounded image" src="../images/filter.png">
+  <img class="ui medium right floated rounded image" src="../screenshots/filter.png">
 </div>
 
 Admin Page
 <div>
-  <img class="ui medium right floated rounded image" src="../images/admin.png">
+  <img class="ui medium right floated rounded image" src="../screenshots/admin.png">
 </div>
 
 Club Admin 
 <div>
-  <img class="ui medium right floated rounded image" src="../images/club_admin.png">
+  <img class="ui medium right floated rounded image" src="../screenshots/club_admin.png">
 </div>
